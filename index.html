@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>МИХАИЛ ПЕТРОВИЧ КАРПЕНКО</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="menu wrapper">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link menu__link--active">Биография</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Научная деятельность</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Изобретения</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Награды</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Видео</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Фото</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Проекты</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="main wrapper">
+      <h1 class="title-h1">МИХАИЛ ПЕТРОВИЧ КАРПЕНКО</h1>
+      <p class="main__sibtitle">Российский ученый, инженер, изобретатель, один из основателей электронного образования в России</p>
+      <aside class="main__citation">
+        <blockquote>Прогресс науки и технологий цивилизации развитых стран бросает новый вызов глобальному социуму - вытесняются из производства и услуг новые контингенты работников. Чтобы справиться с депрессией, вызванной сокращением рабочих мест в производстве, необходимо принять энергичные меры по социализации больших контингентов, а это возможно только через образование.</blockquote>
+        <div class="main__wrap">
+          <span>&copy; М.П. Карпенко</span>
+          <img src="img/signature.png" alt="МИХАИЛ ПЕТРОВИЧ КАРПЕНКО" width="203" height="52">
+        </div>
+      </aside>
+    </section>
+    
+    <section class="slider wrapper">
+      <div id="carousel">
+        <div class="selected">
+          <p class="slider__item">
+            <img src="img/video-1.jpg" alt="" width="360" height="264">
+            <span>Владимир Жириновский<i>Светский политический деятель</i></span>
+            <button type="button" class="btn btn--play slider__play"></button>
+          </p>
+        </div>
+        <div class="next">
+          <p class="slider__item">
+            <img src="img/video-2.jpg" alt="" width="360" height="264">
+            <span>Геннадий Зюганов<i>Светский политический деятель</i></span>
+            <button type="button" class="btn btn--play slider__play"></button>
+          </p>
+        </div>
+        <div class="nextRightSecond">
+          <p class="slider__item">
+            <img src="img/video-3.jpg" alt="" width="360" height="264">
+            <span>Ирина Хакамада<i>Светский политический деятель</i></span>
+            <button type="button" class="btn btn--play slider__play"></button>
+          </p>
+        </div>
+        <div class="hideRight">
+          <p class="slider__item">
+            <img src="img/video-1.jpg" alt="" width="360" height="264">
+            <span>Владимир Жириновский<i>Светский политический деятель</i></span>
+            <button type="button" class="btn btn--play slider__play"></button>
+          </p>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="prev" class="btn btn--prev btn--disabled"></button>
+        <button id="next" class="btn btn--next"></button>
+      </div>
+      
+      <span class="slider__comment">Отзывы о деятельности</span>
+    </section>
+    
+    
+  </main>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+</html>

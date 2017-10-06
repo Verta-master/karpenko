@@ -1,0 +1,34 @@
+.btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: @blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 23px 43px 0 @blue;
+  
+  &--prev {
+    background-image: url(../img/btn-prev.png);
+  }
+  
+  &--next {
+    background-image: url(../img/btn-next.png);
+  }
+  
+  &--play {
+    background-image: url(../img/btn-play.png);
+  }
+  
+  &--disabled {
+    background-color: #f7f7f7;
+    box-shadow: 0 10px 25px 0 rgba(0,0,0,0.08);
+  }
+  
+  &--prev.btn--disabled {
+    background-image: url(../img/btn-start.png);
+  }
+    
+  &--next.btn--disabled {
+    background-image: url(../img/btn-end.png);
+  }
+}
