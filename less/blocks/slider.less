@@ -41,13 +41,13 @@
     &.selected {
       z-index: 10;
       left: 10px;
-      transform: translateY(36%);
+      transform: translateY(40%);
     }
 
     &.next {
       z-index: 5;
       left: 50%;
-      transform: translateY(50px) translateX(-50%);
+      transform: translateY(65px) translateX(-50%);
     }
 
     &.nextRightSecond {
@@ -58,11 +58,11 @@
   }
 }
 
-.buttons {
+.slider__buttons {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 15px;
+  bottom: 0;
 }
 
 .slider__item {
@@ -98,14 +98,18 @@
 }
 
 .slider {
-  margin-bottom: 85px;
+  margin-bottom: 80px;
   position: relative;
 }
 
 .slider__comment {
   font-size: 18px;
   position: absolute;
-  top: 20%;
-  left: -80px;
+  top: 24%;
+  left: -90px;
   transform: rotate(-90deg) translateY(-50%);
+}
+
+.slider__buttons .btn--prev {
+  margin-right: 30px;
 }

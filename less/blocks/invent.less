@@ -14,8 +14,18 @@
 
 .invent {
   background-color: #303030;
-  padding-top: 60px;
-  padding-bottom: 90px;
+  padding-top: 55px;
+  padding-bottom: 20px;
+  
+  .tabs__label {
+    margin-right: 30px;
+    line-height: 1.4;
+    
+    &:hover,
+    &:active {
+      color: #808080;
+    }
+  }
 }
 
 .invent__comment {
@@ -44,4 +54,11 @@
 
 .invent__prev {
   margin-right: 70px;
+}
+
+.invent__buttons {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
 }

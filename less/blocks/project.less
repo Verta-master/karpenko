@@ -1,5 +1,11 @@
 .project__part {
   position: relative;
+  min-height: 715px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 80px;
+  height: 800px;
 }
 
 .project__description {
@@ -17,13 +23,15 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-top: 100px;
   }
 }
 
 .project__title {
   color: @blue;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
+  padding-right: 50px;
   padding-bottom: 35px;
   margin: 0;
   position: relative;
@@ -40,16 +48,8 @@
 }
 
 .project__text {
-  margin-top: 35px;
+  margin-top: 30px;
   margin-bottom: 0;
-}
-
-.project__part {
-  height: 720px;
-  margin-bottom: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 
 .project__img {
@@ -70,7 +70,7 @@
   }
   
   &--extreme {
-    top: 0;
+    top: 80px;
     right: 490px;
   }
 }

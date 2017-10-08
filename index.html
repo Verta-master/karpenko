@@ -10,28 +10,28 @@
     <nav class="menu wrapper">
       <ul class="menu__list">
         <li class="menu__item">
-          <a href="#" class="menu__link menu__link--active">Биография</a>
+          <a href="#biography" class="menu__link menu__link--active">Биография</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Научная деятельность</a>
+          <a href="#activity" class="menu__link">Научная деятельность</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Изобретения</a>
+          <a href="#patents" class="menu__link">Изобретения</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Награды</a>
+          <a href="#awards" class="menu__link">Награды</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Видео</a>
+          <a href="#videos" class="menu__link">Видео</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Фото</a>
+          <a href="#photos" class="menu__link">Фото</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Проекты</a>
+          <a href="#projects" class="menu__link">Проекты</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Контакты</a>
+          <a href="#contact-form" class="menu__link">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -50,7 +50,7 @@
       </aside>
     </section>
     
-    <section class="slider wrapper">
+    <section class="slider wrapper-list">
       <div id="carousel">
         <div class="selected">
           <p class="slider__item">
@@ -82,7 +82,7 @@
         </div>
       </div>
 
-      <div class="buttons">
+      <div class="slider__buttons">
         <button id="prev" class="btn btn--prev btn--disabled"></button>
         <button id="next" class="btn btn--next"></button>
       </div>
@@ -90,7 +90,7 @@
       <span class="slider__comment">Отзывы о деятельности</span>
     </section>
     
-    <section class="bio wrapper">
+    <section class="bio wrapper" id="#biography">
       <p class="number number--center"><span>01</span></p>
       <h2 class="title-h1 title-h1--shift">БИОГРАФИЯ</h2>
       <p class="bio__subtitle">Михаил Петрович Карпенко, президент Современной гуманитарной академии (СГА), профессор, доктор технических наук, родился в Москве в 1936 году. Получил два высших образования, окончив Московский институт инженеров геодезии и картографии (1960 г) и Московский институт нефтехимической и газовой промышленности (1966 г).</p>
@@ -161,7 +161,7 @@
       </div>
     </section>
     
-    <section class="science">
+    <section class="science" id="#activity">
       <div class="wrapper">
         <p class="number"><span>02</span></p>
         <h2 class="title-h1">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</h2>
@@ -414,7 +414,7 @@
       </div>
     </section>
     
-    <section class="invent">
+    <section class="invent" id="#patents">
       <div class="wrapper">
         <p class="number number--invent"><span>03</span></p>
         <h2 class="title-h1 title-h1--invent">ИЗОБРЕТЕНИЯ</h2>
@@ -541,7 +541,7 @@
               </div>
             </li>
           </ul>
-          <div class="science__buttons">
+          <div class="invent__buttons">
             <button type="button" class="btn btn--prev btn--disabled invent__prev"></button>
             <button type="button" class="btn btn--next invent__next"></button>
           </div>
@@ -558,7 +558,7 @@
       </div>
     </section>
     
-    <section class="award wrapper">
+    <section class="award wrapper" id="#awards">
       <p class="number"><span>04</span></p>
       <h2 class="title-h1">НАГРАДЫ</h2>
       <div class="tabs">
@@ -642,7 +642,7 @@
       </div>
     </section>
     
-    <section class="video">
+    <section class="video" id="#videos">
       <div class="wrapper">
         <p class="number number--center"><span>05</span></p>
         <h2 class="title-h1 title-h1--shift">ВИДЕО</h2>
@@ -799,7 +799,7 @@
       </div>
     </section>
     
-    <section class="photo">
+    <section class="photo" id="#photos">
       <div class="wrapper">
         <p class="number"><span>06</span></p>
         <h2 class="title-h1">ФОТО</h2>
@@ -871,7 +871,7 @@
       </div>
     </section>
     
-    <section class="project wrapper">
+    <section class="project wrapper" id="#projects">
       <p class="number number--center"><span>07</span></p>
       <h2 class="title-h1 title-h1--shift">ПРОЕКТЫ</h2>
       <article class="project__part">
@@ -994,7 +994,7 @@
       </div>
     </section>
     
-    <section class="contacts wrapper">
+    <section class="contacts wrapper" id="#contact-form">
       <h2 class="title-h1">КОНТАКТЫ</h2>
       <div class="contacts__area">
         <span class="contacts__feedback">Обратная связь</span>
@@ -1044,5 +1044,17 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  
+<!-- Scroll to anchor -->
+  <script>
+    $(document).ready(function(){
+      $(".menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+      });
+    });
+  </script>
 </body>
 </html>

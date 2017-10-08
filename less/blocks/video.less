@@ -1,11 +1,16 @@
 .video {
-  padding-top: 135px;
+  padding-top: 130px;
   padding-bottom: 40px;
+  
+  .tabs {
+    margin-top: 78px;
+  }
 }
 
 .video__tab {
   position: relative;
   display: none;
+  padding-top: 8px;
 }
 
 #video-1:checked ~ .video__tab--01,
@@ -34,7 +39,7 @@
   margin-right: 30px;
   overflow: hidden;
   .shadow();
-  margin-bottom: 55px;
+  margin-bottom: 57px;
   
   &:nth-child(4) {
     margin-top: 130px;
@@ -42,8 +47,8 @@
 }
 
 .video__bottom {
-  padding: 15px 25px 30px 25px;
-  min-height: 125px;
+  padding: 17px 25px;
+  min-height: 120px;
   display: flex;
   flex-direction: column;
 }
@@ -71,12 +76,12 @@
 
 .video__prev {
   position: absolute;
-  bottom: 60px;
+  bottom: 80px;
   left: 510px;
 }
 
 .video__next {
   position: absolute;
-  bottom: -25px;
+  bottom: -15px;
   left: 600px;
 }
