@@ -264,36 +264,44 @@
 
 .fancybox-close-small {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 44px;
-  height: 44px;
+  top: 70px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
   padding: 0;
   margin: 0;
   border: 0;
-  border-radius: 0;
+  border-radius: 50%;
   outline: none;
-  background: transparent;
+//  background: transparent;
+  background-color: #fff;
+  background-image: url(../../img/btn-cross.png);
+  background-size: 21px 23px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 23px 43px 0 @blue;
   z-index: 10;
   cursor: pointer; }
 
 .fancybox-close-small:after {
-  content: '×';
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 30px;
-  height: 30px;
-  font: 20px/30px Arial,"Helvetica Neue",Helvetica,sans-serif;
-  color: #888;
-  font-weight: 300;
-  text-align: center;
-  border-radius: 50%;
-  border-width: 0;
-  background: #fff;
-  transition: background .25s;
-  box-sizing: border-box;
-  z-index: 2; }
+//  content: '×';
+  content: "";
+//  position: absolute;
+//  top: 5px;
+//  right: 5px;
+//  width: 30px;
+//  height: 30px;
+//  font: 20px/30px Arial,"Helvetica Neue",Helvetica,sans-serif;
+//  color: #888;
+//  font-weight: 300;
+//  text-align: center;
+//  border-radius: 50%;
+//  border-width: 0;
+//  background: #fff;
+//  transition: background .25s;
+//  box-sizing: border-box;
+//  z-index: 2; 
+}
 
 .fancybox-close-small:focus:after {
   outline: 1px dotted #888; }
