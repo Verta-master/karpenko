@@ -1,0 +1,47 @@
+#invent-1:checked ~ .invent__tab--01,
+#invent-2:checked ~ .invent__tab--02,
+#invent-3:checked ~ .invent__tab--03,
+#invent-4:checked ~ .invent__tab--04 {
+  display: block;
+}
+
+#invent-1:checked ~ .tabs__menu .invent__01,
+#invent-2:checked ~ .tabs__menu .invent__02,
+#invent-3:checked ~ .tabs__menu .invent__03,
+#invent-4:checked ~ .tabs__menu .invent__04 {
+  color: #808080;
+}
+
+.invent {
+  background-color: #303030;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+.invent__comment {
+  display: block;
+  color: #e1e1e1;
+  margin-top: 20px;
+}
+
+.invent__item {
+  width: 264px;
+  margin-bottom: 80px;
+  margin-right: 25px;
+  
+  &:nth-child(4) {
+    margin-top: 80px;
+  }
+  
+  &:nth-child(7) {
+    margin-top: 170px;
+  }
+  
+  &:nth-child(10) {
+    margin-top: 250px;
+  }
+}
+
+.invent__prev {
+  margin-right: 70px;
+}

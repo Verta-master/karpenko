@@ -161,21 +161,23 @@
       </div>
     </section>
     
-    <section class="science wrapper">
-      <p class="number"><span>02</span></p>
-      <h2 class="title-h1 title-h1">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</h2>
+    <section class="science">
+      <div class="wrapper">
+        <p class="number"><span>02</span></p>
+        <h2 class="title-h1">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</h2>
+      </div>
       <div class="tabs">
         <input type="radio" name="science" id="science-1" class="tabs__radio" checked>
         <input type="radio" name="science" id="science-2" class="tabs__radio">
         <input type="radio" name="science" id="science-3" class="tabs__radio">
         <input type="radio" name="science" id="science-4" class="tabs__radio">
-        <nav class="tabs__menu">
+        <nav class="wrapper-tab tabs__menu">
           <label for="science-1" class="tabs__label science__01"><span>Статьи</span></label>
           <label for="science-2" class="tabs__label science__02"><span>Монографии</span></label>
           <label for="science-3" class="tabs__label science__03"><span>Учебные словари</span></label>
           <label for="science-4" class="tabs__label science__04"><span>Цитаты</span></label>
         </nav>
-        <article class="science__tab science__tab--01">
+        <article class="science__tab science__tab--01 wrapper-list">
           <ul class="science__list">
             <li class="science__item">
               <div class="science__img">
@@ -237,7 +239,7 @@
             <button type="button" class="btn btn--next science__next"></button>
           </div>
         </article>
-        <article class="science__tab science__tab--02">
+        <article class="science__tab science__tab--02 wrapper-list">
           <ul class="science__list science__list--book">
             <li class="science__book">
               <div class="science__pic">
@@ -303,8 +305,12 @@
               </a>
             </li>
           </ul>
+          <div class="science__buttons">
+            <button type="button" class="btn btn--prev btn--disabled science__prev"></button>
+            <button type="button" class="btn btn--next science__next"></button>
+          </div>
         </article>
-        <article class="science__tab science__tab--03">
+        <article class="science__tab science__tab--03 wrapper-list">
           <ul class="science__list science__list--book">
             <li class="science__book">
               <div class="science__pic">
@@ -379,8 +385,12 @@
               </a>
             </li>
           </ul>
+          <div class="science__buttons">
+            <button type="button" class="btn btn--prev btn--disabled science__prev"></button>
+            <button type="button" class="btn btn--next science__next"></button>
+          </div>
         </article>
-        <article class="science__tab science__tab--04">
+        <article class="science__tab science__tab--04 wrapper">
           <ul class="science__citation">
             <li class="science__quote">Прогресс науки и технологий цивилизации развитых стран бросает новый вызов глобальному социуму - вытесняются из производства и услуг новые контингенты работников. Чтобы справиться с депрессией, вызванной сокращением рабочих мест в производстве, необходимо принять энергичные меры по социализации больших контингентов, а это возможно только через образование.</li>
             <li class="science__quote">В ближайшее время образованию для выживания любого этноса будет принадлежать главенствующая роль и одной из важнейших наук станет научная дидактика, опирающаяся на когнитивные науки и информатизацию. Электронная информационно – образовательная среда является главным инструментом предоставления образовательных услуг с использованием современных информационных и телекоммуникационных технологий. При выборе критерия качества ЭИОС не могут быть использованы профессиональные и творческие достижения выпускников, так как они в большей степени зависят от способностей личности, чем от метода обучения.</li>
@@ -404,13 +414,466 @@
       </div>
     </section>
     
-    <section class="invent wrapper">
-      <p class="number number--third"><span>03</span></p>
-      <h2 class="title-h1 title-h1--third">ИЗОБРЕТЕНИЯ</h2>
+    <section class="invent">
+      <div class="wrapper">
+        <p class="number number--invent"><span>03</span></p>
+        <h2 class="title-h1 title-h1--invent">ИЗОБРЕТЕНИЯ</h2>
+      </div>
+      <div class="tabs">
+        <input type="radio" name="invent" id="invent-1" class="tabs__radio" checked>
+        <input type="radio" name="invent" id="invent-2" class="tabs__radio">
+        <input type="radio" name="invent" id="invent-3" class="tabs__radio">
+        <input type="radio" name="invent" id="invent-4" class="tabs__radio">
+        <nav class="wrapper-tab tabs__menu tabs__menu--invent">
+          <label for="invent-1" class="tabs__label invent__01">Архитектура и мебель</label>
+          <label for="invent-2" class="tabs__label invent__02">Базы данных</label>
+          <label for="invent-3" class="tabs__label invent__03">Инструменты учебного процесса</label>
+          <label for="invent-4" class="tabs__label invent__04">Программы для ЭВМ</label>
+        </nav>
+        <article class="science__tab invent__tab--01 wrapper-list">
+          <ul class="science__list science__list--invent">
+            <li class="invent__item">
+              <div class="science__pic">
+                <img src="img/certificate.jpg" alt="Вигоросность и инновации" width="264" height="363">
+              </div>
+              <div class="science__link science__link--invent">
+                <p class="science__title">Свидетельство об официальной регистрации базы даных</p>
+                <span class="invent__comment">Дата регистрации: 02.08.1998</span>
+              </div>
+            </li>
+            <li class="invent__item">
+              <div class="science__pic">
+                <img src="img/certificate.jpg" alt="Вигоросность и инновации" width="264" height="363">
+              </div>
+              <div class="science__link science__link--invent">
+                <p class="science__title">Название изобретения</p>
+                <span class="invent__comment">Дата регистрации: 02.08.1998</span>
+              </div>
+            </li>
+            <li class="invent__item">
+              <div class="science__pic">
+                <img src="img/certificate.jpg" alt="Вигоросность и инновации" width="264" height="363">
+              </div>
+              <div class="science__link science__link--invent">
+                <p class="science__title">Название изобретения</p>
+                <span class="invent__comment">Дата регистрации: 02.08.1998</span>
+              </div>
+            </li>
+            <li class="invent__item">
+              <div class="science__pic">
+                <img src="img/certificate.jpg" alt="Вигоросность и инновации" width="264" height="363">
+              </div>
+              <div class="science__link science__link--invent">
+                <p class="science__title">Название изобретения</p>
+                <span class="invent__comment">Дата регистрации: 02.08.1998</span>
+              </div>
+            </li>
+            <li class="invent__item">
+              <div class="science__pic">
+                <img src="img/certificate.jpg" alt="Вигоросность и инновации" width="264" height="363">
+              </div>
+              <div class="science__link science__link--invent">
+                <p class="science__title">Название изобретения</p>
+                <span class="invent__comment">Дата регистрации: 02.08.1998</span>
+              </div>
+            </li>
+            <li class="invent__item">
+              <div class="science__pic">
+                <img src="img/certificate.jpg" alt="Вигоросность и инновации" width="264" height="363">
+              </div>
+              <div class="science__link science__link--invent">
+                <p class="science__title">Название изобретения</p>
+                <span class="invent__comment">Дата регистрации: 02.08.1998</span>
+              </div>
+            </li>
+            <li class="invent__item">
+              <div class="science__pic">
+                <img src="img/certificate.jpg" alt="Вигоросность и инновации" width="264" height="363">
+              </div>
+              <div class="science__link science__link--invent">
+                <p class="science__title">Название изобретения</p>
+                <span class="invent__comment">Дата регистрации: 02.08.1998</span>
+              </div>
+            </li>
+            <li class="invent__item">
+              <div class="science__pic">
+                <img src="img/certificate.jpg" alt="Вигоросность и инновации" width="264" height="363">
+              </div>
+              <div class="science__link science__link--invent">
+                <p class="science__title">Название изобретения</p>
+                <span class="invent__comment">Дата регистрации: 02.08.1998</span>
+              </div>
+            </li>
+            <li class="invent__item">
+              <div class="science__pic">
+                <img src="img/certificate.jpg" alt="Вигоросность и инновации" width="264" height="363">
+              </div>
+              <div class="science__link science__link--invent">
+                <p class="science__title">Название изобретения</p>
+                <span class="invent__comment">Дата регистрации: 02.08.1998</span>
+              </div>
+            </li>
+            <li class="invent__item">
+              <div class="science__pic">
+                <img src="img/certificate.jpg" alt="Вигоросность и инновации" width="264" height="363">
+              </div>
+              <div class="science__link science__link--invent">
+                <p class="science__title">Название изобретения</p>
+                <span class="invent__comment">Дата регистрации: 02.08.1998</span>
+              </div>
+            </li>
+            <li class="invent__item">
+              <div class="science__pic">
+                <img src="img/certificate.jpg" alt="Вигоросность и инновации" width="264" height="363">
+              </div>
+              <div class="science__link science__link--invent">
+                <p class="science__title">Название изобретения</p>
+                <span class="invent__comment">Дата регистрации: 02.08.1998</span>
+              </div>
+            </li>
+            <li class="invent__item">
+              <div class="science__pic">
+                <img src="img/certificate.jpg" alt="Вигоросность и инновации" width="264" height="363">
+              </div>
+              <div class="science__link science__link--invent">
+                <p class="science__title">Название изобретения</p>
+                <span class="invent__comment">Дата регистрации: 02.08.1998</span>
+              </div>
+            </li>
+          </ul>
+          <div class="science__buttons">
+            <button type="button" class="btn btn--prev btn--disabled invent__prev"></button>
+            <button type="button" class="btn btn--next invent__next"></button>
+          </div>
+        </article>
+        <article class="science__tab invent__tab--02 wrapper-list">
+        
+        </article>
+        <article class="science__tab invent__tab--03 wrapper-list">
+        
+        </article>
+        <article class="science__tab invent__tab--04 wrapper-list">
+        
+        </article>
+      </div>
+    </section>
+    
+    <section class="award wrapper">
+      <p class="number"><span>04</span></p>
+      <h2 class="title-h1">НАГРАДЫ</h2>
+      <div class="tabs">
+        <input type="radio" name="award" id="award-1" class="tabs__radio" checked>
+        <input type="radio" name="award" id="award-2" class="tabs__radio">
+        <input type="radio" name="award" id="award-3" class="tabs__radio">
+        <nav class="wrapper-tab tabs__menu tabs__menu--invent">
+          <label for="award-1" class="tabs__label award__01">Государственные награды</label>
+          <label for="award-2" class="tabs__label award__02">Общественные награды</label>
+          <label for="award-3" class="tabs__label award__03">Награды постоянного Президиума Народных депутатов СССР</label>
+        </nav>
+        <article class="award__tab award__tab--01">
+          <div class="award__title">
+            <p class="award__year">ГОД ПОЛУЧЕНИЯ</p>
+            <p class="award__name">НАГРАДА</p>
+            <p class="award__source">НАГРАЖДАЮЩИЙ ОРГАН</p>
+          </div>
+          <ul class="award__list">
+            <li class="award__item">
+              <p class="award__year">1953</p>
+              <p class="award__name">Серебряная медаль За большие успехи, обнаруженные при окончании средней школы; и отличное поведение</p>
+              <p class="award__source">Московский городской отдел народного образования</p>
+            </li>
+            <li class="award__item">
+              <p class="award__year">1973</p>
+              <p class="award__name">Серебряная медаль За достигнутые успехи в развитии народного хозяйства СССР</p>
+              <p class="award__source">Главный комитет ВДНХ СССР</p>
+            </li>
+            <li class="award__item">
+              <p class="award__year">1953</p>
+              <p class="award__name">Грамота Первомайский РК ВЛКСМ За активную работу по воспитанию молодежи в системе политпросвещения</p>
+              <p class="award__source">РК ВЛКСМ</p>
+            </li>
+            <li class="award__item">
+              <p class="award__year">1975</p>
+              <p class="award__name">Золотая медаль За достигнутые успехи в развитии народного хозяйства СССР</p>
+              <p class="award__source">Главный комитет ВДНХ СССР</p>
+            </li>
+            <li class="award__item">
+              <p class="award__year">1975</p>
+              <p class="award__name">Орден «Знак почета»</p>
+              <p class="award__source">Президиум Верховного Совета СССР</p>
+            </li>
+            <li class="award__item">
+              <p class="award__year">1977</p>
+              <p class="award__name">Серебряная медаль За достигнутые успехи в развитии народного хозяйства СССР</p>
+              <p class="award__source">Главный комитет ВДНХ СССР</p>
+            </li>
+            <li class="award__item">
+              <p class="award__year">1975</p>
+              <p class="award__name">Золотая медаль За достигнутые успехи в развитии народного хозяйства СССР</p>
+              <p class="award__source">Главный комитет ВДНХ СССР</p>
+            </li>
+            <li class="award__item">
+              <p class="award__year">1953</p>
+              <p class="award__name">Серебряная медаль За большие успехи, обнаруженные при окончании средней школы; и отличное поведение</p>
+              <p class="award__source">Московский городской отдел народного образования</p>
+            </li>
+            <li class="award__item">
+              <p class="award__year">1973</p>
+              <p class="award__name">Серебряная медаль За достигнутые успехи в развитии народного хозяйства СССР</p>
+              <p class="award__source">Главный комитет ВДНХ СССР</p>
+            </li>
+            <li class="award__item">
+              <p class="award__year">1953</p>
+              <p class="award__name">Грамота Первомайский РК ВЛКСМ За активную работу по воспитанию молодежи в системе политпросвещения</p>
+              <p class="award__source">РК ВЛКСМ</p>
+            </li>
+          </ul>
+          <div class="award__buttons">
+            <button type="button" class="btn btn--prev btn--disabled award__prev"></button>
+            <button type="button" class="btn btn--next award__next"></button>
+          </div>
+        </article>
+        <article class="award__tab award__tab--02">
+        
+        </article>
+        <article class="award__tab award__tab--03">
+        
+        </article>
+      </div>
+    </section>
+    
+    <section class="video">
+      <div class="wrapper">
+        <p class="number number--center"><span>05</span></p>
+        <h2 class="title-h1 title-h1--shift">ВИДЕО</h2>
+      </div>
+      <div class="tabs">
+        <input type="radio" name="video" id="video-1" class="tabs__radio" checked>
+        <input type="radio" name="video" id="video-2" class="tabs__radio">
+        <input type="radio" name="video" id="video-3" class="tabs__radio">
+        <input type="radio" name="video" id="video-4" class="tabs__radio">
+        <nav class="wrapper-tab tabs__menu">
+          <label for="video-1" class="tabs__label video__01"><span>Гости СГА</span></label>
+          <label for="video-2" class="tabs__label video__02"><span>Отзывы</span></label>
+          <label for="video-3" class="tabs__label video__03"><span>Поздравления</span></label>
+          <label for="video-4" class="tabs__label video__04"><span>Телепередачи</span></label>
+        </nav>
+        <article class="video__tab video__tab--01 wrapper-list">
+          <ul class="science__list science__list--video">
+            <li class="video__item">
+              <div class="video__img">
+                <img src="img/video-4.jpg" alt="Статьи" width="555" height="348">
+                <button type="button" class="btn btn--play video__play"></button>
+              </div>
+              <div class="video__bottom">
+                <p class="video__text">Название телепередачи</p>
+                <span class="video__date">1 марта, 2016</span>
+              </div>
+            </li>
+            <li class="video__item">
+              <div class="video__img">
+                <img src="img/video-5.jpg" alt="Статьи" width="555" height="348">
+                <button type="button" class="btn btn--play video__play"></button>
+              </div>
+              <div class="video__bottom">
+                <p class="video__text">Название телепередачи</p>
+                <span class="video__date">1 марта, 2016</span>
+              </div>
+            </li>
+            <li class="video__item">
+              <div class="video__img">
+                <img src="img/video-6.jpg" alt="Статьи" width="555" height="348">
+                <button type="button" class="btn btn--play video__play"></button>
+              </div>
+              <div class="video__bottom">
+                <p class="video__text">Название телепередачи</p>
+                <span class="video__date">1 марта, 2016</span>
+              </div>
+            </li>
+            <li class="video__item">
+              <div class="video__img">
+                <img src="img/video-7.jpg" alt="Статьи" width="555" height="348">
+                <button type="button" class="btn btn--play video__play"></button>
+              </div>
+              <div class="video__bottom">
+                <p class="video__text">Название телепередачи</p>
+                <span class="video__date">1 марта, 2016</span>
+              </div>
+            </li>
+            <li class="video__item">
+              <div class="video__img">
+                <img src="img/video-8.jpg" alt="Статьи" width="555" height="348">
+                <button type="button" class="btn btn--play video__play"></button>
+              </div>
+              <div class="video__bottom">
+                <p class="video__text">Название телепередачи</p>
+                <span class="video__date">1 марта, 2016</span>
+              </div>
+            </li>
+            <li class="video__item">
+              <div class="video__img">
+                <img src="img/video-9.jpg" alt="Статьи" width="555" height="348">
+                <button type="button" class="btn btn--play video__play"></button>
+              </div>
+              <div class="video__bottom">
+                <p class="video__text">Название телепередачи</p>
+                <span class="video__date">1 марта, 2016</span>
+              </div>
+            </li>
+          </ul>
+          <button type="button" class="btn btn--prev btn--disabled video__prev"></button>
+          <button type="button" class="btn btn--next video__next"></button>
+        </article>
+        <article class="video__tab video__tab--02 wrapper-list">
+        
+        </article>
+        <article class="video__tab video__tab--03 wrapper-list">
+        
+        </article>
+        <article class="video__tab video__tab--04 wrapper-list">
+          <ul class="science__list science__list--video">
+            <li class="video__item">
+              <div class="video__img">
+                <img src="img/video-4.jpg" alt="Статьи" width="555" height="348">
+                <button type="button" class="btn btn--play video__play"></button>
+              </div>
+              <div class="video__bottom">
+                <p class="video__text">Название телепередачи</p>
+                <span class="video__date">1 марта, 2016</span>
+              </div>
+            </li>
+            <li class="video__item">
+              <div class="video__img">
+                <img src="img/video-5.jpg" alt="Статьи" width="555" height="348">
+                <button type="button" class="btn btn--play video__play"></button>
+              </div>
+              <div class="video__bottom">
+                <p class="video__text">Название телепередачи</p>
+                <span class="video__date">1 марта, 2016</span>
+              </div>
+            </li>
+            <li class="video__item">
+              <div class="video__img">
+                <img src="img/video-6.jpg" alt="Статьи" width="555" height="348">
+                <button type="button" class="btn btn--play video__play"></button>
+              </div>
+              <div class="video__bottom">
+                <p class="video__text">Название телепередачи</p>
+                <span class="video__date">1 марта, 2016</span>
+              </div>
+            </li>
+            <li class="video__item">
+              <div class="video__img">
+                <img src="img/video-7.jpg" alt="Статьи" width="555" height="348">
+                <button type="button" class="btn btn--play video__play"></button>
+              </div>
+              <div class="video__bottom">
+                <p class="video__text">Название телепередачи</p>
+                <span class="video__date">1 марта, 2016</span>
+              </div>
+            </li>
+            <li class="video__item">
+              <div class="video__img">
+                <img src="img/video-8.jpg" alt="Статьи" width="555" height="348">
+                <button type="button" class="btn btn--play video__play"></button>
+              </div>
+              <div class="video__bottom">
+                <p class="video__text">Название телепередачи</p>
+                <span class="video__date">1 марта, 2016</span>
+              </div>
+            </li>
+            <li class="video__item">
+              <div class="video__img">
+                <img src="img/video-9.jpg" alt="Статьи" width="555" height="348">
+                <button type="button" class="btn btn--play video__play"></button>
+              </div>
+              <div class="video__bottom">
+                <p class="video__text">Название телепередачи</p>
+                <span class="video__date">1 марта, 2016</span>
+              </div>
+            </li>
+          </ul>
+          <button type="button" class="btn btn--prev btn--disabled video__prev"></button>
+          <button type="button" class="btn btn--next video__next"></button>
+        </article>
+      </div>
+    </section>
+    
+    <section class="photo">
+      <div class="wrapper">
+        <p class="number"><span>06</span></p>
+        <h2 class="title-h1">ФОТО</h2>
+      </div>
+      <div class="wrapper-list">
+        <ul class="science__list science__list--photo">
+          <li class="photo__item">
+            <a data-fancybox="gallery-1" data-width="750" data-height="471" href="img/photo-1.jpg">
+              <img src="img/photo-1.jpg" alt="Гости СГА" class="photo__img" width="555" height="348">
+            </a>
+            <div class="photo__bottom">
+              <p class="photo__name">Гости СГА</p>
+              <p class="photo__view">127</p>
+            </div>
+          </li>
+          <li class="photo__item">
+            <a data-fancybox="gallery-2" href="img/photo-3.jpg">
+              <img src="img/photo-3.jpg" alt="С Федором Конюховым" class="photo__img" width="555" height="348">
+            </a>
+            <div class="photo__bottom">
+              <p class="photo__name">С Федором Конюховым</p>
+              <p class="photo__view">127</p>
+            </div>
+          </li>
+          <li class="photo__item">
+            <a data-fancybox="gallery-3" href="img/photo-2.jpg">
+              <img src="img/photo-2.jpg" alt="Конференции" class="photo__img" width="555" height="348">
+            </a>
+            <div class="photo__bottom">
+              <p class="photo__name">Конференции</p>
+              <p class="photo__view">127</p>
+            </div>
+          </li>
+          <li class="photo__item">
+            <a data-fancybox="gallery-4" href="img/bio-1.jpg">
+              <img src="img/bio-1.jpg" alt="Семья" class="photo__img" width="555" height="348">
+            </a>
+            <div class="photo__bottom">
+              <p class="photo__name">Семья</p>
+              <p class="photo__view">127</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="photo__hide" id="gallery-1">
+          <a data-fancybox="gallery-1" data-width="750" data-height="471" href="img/photo-2.jpg"></a>
+          <a data-fancybox="gallery-1" data-width="750" data-height="471" href="img/photo-3.jpg"></a>
+          <a data-fancybox="gallery-1" data-width="750" data-height="471" href="img/photo-4.jpg"></a>
+        </div>
+
+        <div class="photo__hide" id="gallery-2">
+          <a data-fancybox="gallery-2" href="img/photo-1.jpg"></a>
+          <a data-fancybox="gallery-2" href="img/photo-2.jpg"></a>
+          <a data-fancybox="gallery-2" href="img/photo-3.jpg"></a>
+        </div>
+          
+        <div class="photo__hide" id="gallery-2">
+          <a data-fancybox="gallery-3" href="img/photo-1.jpg"></a>
+          <a data-fancybox="gallery-3" href="img/photo-2.jpg"></a>
+          <a data-fancybox="gallery-3" href="img/photo-3.jpg"></a>
+        </div>
+          
+        <div class="photo__hide" id="gallery-3">
+          <a data-fancybox="gallery-4" href="img/bio-2.jpg"></a>
+          <a data-fancybox="gallery-4" href="img/bio-3.jpg"></a>
+          <a data-fancybox="gallery-4" href="img/bio-4.jpg"></a>
+          <a data-fancybox="gallery-4" href="img/bio-5.jpg"></a>
+        </div>
+      </div>
     </section>
   </main>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
 </body>
 </html>

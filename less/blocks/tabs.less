@@ -63,16 +63,21 @@
   display: flex;
   align-items: baseline;
   margin-bottom: 65px;
-  padding-bottom: 20px;
-  margin-right: 15px;
+  padding-bottom: 20px; 
   border-bottom: 1px solid @grey-bg;
   z-index: 5;
   
   &--wide {
+    margin-right: 15px;
     justify-content: space-between;
     
     .tabs__label {
       margin-right: 0;
     }
+  }
+  
+  &--invent {
+    border-bottom: none;
+    flex-wrap: wrap;
   }
 }

@@ -5,16 +5,35 @@
 .science__list {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
+  width: 100%;
   height: 1535px;
+  padding-left: 15px;
+  overflow: hidden;
   
   &--book {
     height: 1350px;
+  }
+  
+  &--invent {
+    height: 1900px;
+  }
+  
+  &--video {
+    height: 1740px;
+  }
+  
+  &--photo {
+    height: 1150px;
   }
 }
 
 .science__item {
   width: 360px;
+  margin-right: 30px;
   overflow: hidden;
   .shadow();
   margin-bottom: 55px;
@@ -102,6 +121,7 @@
 .science__book {
   width: 264px;
   margin-bottom: 80px;
+  margin-right: 25px;
   
   &:nth-child(3) {
     margin-top: 80px;
@@ -143,6 +163,10 @@
   
   &:hover .science__title {
     text-decoration: underline;
+  }
+  
+  &--invent:hover .science__title {
+    text-decoration: none;
   }
 }
 

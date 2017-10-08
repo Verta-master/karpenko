@@ -1,0 +1,54 @@
+.photo {
+  padding-top: 100px;
+}
+
+.photo__hide {
+  display: none;
+}
+
+.photo__item {
+  width: 555px;
+  margin-right: 30px;
+  overflow: hidden;
+  .shadow();
+  margin-bottom: 60px;
+  
+  &:nth-child(3) {
+    margin-top: 130px;
+  }
+}
+
+.photo__bottom {
+  padding: 30px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.photo__name {
+  color: @blue;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.photo__view {
+  color: #c9c9c9;
+  position: relative;
+  padding-left: 35px;
+  margin: 0;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 22px;
+    background-image: url(../img/icon-camera.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.photo__img {
+  display: block;
+}

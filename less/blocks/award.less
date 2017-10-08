@@ -1,0 +1,78 @@
+.award {
+  padding-top: 185px;
+}
+
+#award-1:checked ~ .award__tab--01,
+#award-2:checked ~ .award__tab--02,
+#award-3:checked ~ .award__tab--03 {
+  display: block;
+}
+
+#award-1:checked ~ .tabs__menu .award__01,
+#award-2:checked ~ .tabs__menu .award__02,
+#award-3:checked ~ .tabs__menu .award__03 {
+  color: #808080;
+}
+
+.award__tab {
+  position: relative;
+  display: none;
+}
+
+.award__title {
+  display: flex;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  
+  p {
+    margin: 0;
+    padding-bottom: 45px;
+    position: relative;
+  }
+  
+  p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 68px;
+    height: 2px;
+    background-color: #cacaca;
+  }
+}
+
+.award__year {
+  width: 290px;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.award__name {
+  width: 485px;
+  padding-right: 125px;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.award__source {
+  padding-right: 15px;
+  margin: 0;
+}
+
+.award__item {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 74px;
+}
+
+.award__list {
+  margin-bottom: 90px;
+}
+
+.award__buttons {
+  text-align: center;
+}
+
+.award__prev {
+  margin-right: 50px;
+}
