@@ -1,7 +1,7 @@
 $().ready(function (e) {
 
     $('.photo__slider-main').slick({
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         fade: false,
