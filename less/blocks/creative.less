@@ -1,13 +1,14 @@
 .creative {
-  padding-top: 40px;
+  padding-top: 95px;
   
   .tabs {
-    margin-top: 35px;
+    margin-top: 0;
   }
 }
 
 .creative__tab {
   display: none;
+  padding-top: 30px;
 }
 
 #creative-1:checked ~ .creative__tab--01,
@@ -63,4 +64,115 @@
     letter-spacing: 3px;
     margin-left: 10px;
   }
+}
+
+.creative__audio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 75px;
+  .shadow();
+  width: 850px;
+  height: 140px;
+  padding-left: 10px;
+  padding-right: 35px;
+  
+  &:last-of-type {
+    margin-bottom: 145px;
+  }
+}
+
+.ui-slider .ui-slider-handle {
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  background-color: @blue;
+  box-shadow: 0 10px 13px 0 rgba(0,106,255,0.44);
+  outline: none;
+  top: -0.5em;
+}
+
+.ui-widget-content {
+  background-color: @blue;
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+  height: 1px;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+  height: 3px;
+  left: 0;
+  width: 50%;
+  background-color: @blue;
+}
+
+.audio-volume {
+  width: 125px;
+}
+
+.audio-track {
+  width: 530px;
+  
+  &::before {
+    content: "01:55";
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 50px;
+    height: 38px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    background-image: url(../img/bg-time.png);
+    background-repeat: no-repeat;
+  }
+  
+  &--nospeak::before {
+    display: none;
+  }
+}
+
+.audio-name {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: @blue;
+}
+
+.audio-time {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  color: #c9c9c9;
+}
+
+.audio-play,
+.audio-settings {
+  position: relative;
+  padding-top: 20px;
+}
+
+.audio-settings::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  background-repeat: no-repeat;
+}
+
+.audio-settings--speak::before {
+  width: 30px;
+  height: 24px;
+  background-image: url(../img/icon-speaker.png);
+}
+
+.audio-settings--nospeak::before {
+  width: 26px;
+  height: 22px;
+  background-image: url(../img/icon-nospeak.png);
 }

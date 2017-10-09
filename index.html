@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>МИХАИЛ ПЕТРОВИЧ КАРПЕНКО</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -807,7 +808,7 @@
       <div class="wrapper-list">
         <ul class="science__list science__list--photo">
           <li class="photo__item">
-            <a data-fancybox="gallery-1" data-width="750" data-height="471" href="img/photo-1.jpg">
+            <a data-fancybox data-src="#gallery-1" href="javascript:;">
               <img src="img/photo-1.jpg" alt="Гости СГА" class="photo__img" width="555" height="348">
             </a>
             <div class="photo__bottom">
@@ -844,29 +845,27 @@
           </li>
         </ul>
 
-        <div class="photo__hide" id="gallery-1">
-          <a data-fancybox="gallery-1" data-width="750" data-height="471" href="img/photo-2.jpg"></a>
-          <a data-fancybox="gallery-1" data-width="750" data-height="471" href="img/photo-3.jpg"></a>
-          <a data-fancybox="gallery-1" data-width="750" data-height="471" href="img/photo-4.jpg"></a>
-        </div>
-
-        <div class="photo__hide" id="gallery-2">
-          <a data-fancybox="gallery-2" href="img/photo-1.jpg"></a>
-          <a data-fancybox="gallery-2" href="img/photo-2.jpg"></a>
-          <a data-fancybox="gallery-2" href="img/photo-3.jpg"></a>
-        </div>
-          
-        <div class="photo__hide" id="gallery-2">
-          <a data-fancybox="gallery-3" href="img/photo-1.jpg"></a>
-          <a data-fancybox="gallery-3" href="img/photo-2.jpg"></a>
-          <a data-fancybox="gallery-3" href="img/photo-3.jpg"></a>
-        </div>
-          
-        <div class="photo__hide" id="gallery-3">
-          <a data-fancybox="gallery-4" href="img/bio-2.jpg"></a>
-          <a data-fancybox="gallery-4" href="img/bio-3.jpg"></a>
-          <a data-fancybox="gallery-4" href="img/bio-4.jpg"></a>
-          <a data-fancybox="gallery-4" href="img/bio-5.jpg"></a>
+        <div class="photo__hide wrapper" id="gallery-1">
+          <div class="photo__wrap">
+            <h2 class="title-h1">Гости СГА</h2>
+            <p class="photo__view">127</p>
+          </div>
+          <div class="photo__slider">
+            <ul class="photo__slider-main">
+              <li><img src="img/photo-1.jpg" alt="Гости СГА" width="750" height="471"></li>
+              <li><img src="img/photo-2.jpg" alt="Гости СГА" width="750" height="471"></li>
+              <li><img src="img/photo-3.jpg" alt="Гости СГА" width="750" height="471"></li>
+              <li><img src="img/photo-4.jpg" alt="Гости СГА" width="750" height="471"></li>
+            </ul>
+            <div class="slick-thumbs">
+              <ul class="photo__slider-thumbs">
+                <li><img src="img/photo-1.jpg" alt="Гости СГА" width="750" height="471"></li>
+                <li><img src="img/photo-2.jpg" alt="Гости СГА" width="750" height="471"></li>
+                <li><img src="img/photo-3.jpg" alt="Гости СГА" width="750" height="471"></li>
+                <li><img src="img/photo-4.jpg" alt="Гости СГА" width="750" height="471"></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -934,8 +933,48 @@
         </nav>
         <article class="creative__tab creative__tab--01">
           <div class="creative__audio">
-            <button class="creative__btn"></button>
-            
+            <button class="btn btn--pause creative__btn"></button>
+            <div class="audio-play">
+              <div class="audio-track"></div>
+              <span class="audio-name">АКАДЕМИЧЕСКИЙ ГИМН</span>
+              <span class="audio-time">00:55</span>
+            </div>
+            <div class="audio-settings audio-settings--speak">
+              <div class="audio-volume"></div>
+            </div>
+          </div>
+          <div class="creative__audio">
+            <button class="btn btn--pause creative__btn"></button>
+            <div class="audio-play">
+              <div class="audio-track audio-track--nospeak"></div>
+              <span class="audio-name">ГИМН ФИЛИАЛОВ</span>
+              <span class="audio-time">00:55</span>
+            </div>
+            <div class="audio-settings audio-settings--nospeak">
+              <div class="audio-volume"></div>
+            </div>
+          </div>
+          <div class="creative__audio">
+            <button class="btn btn--pause creative__btn"></button>
+            <div class="audio-play">
+              <div class="audio-track"></div>
+              <span class="audio-name">АКАДЕМИЧЕСКИЙ ГИМН</span>
+              <span class="audio-time">00:55</span>
+            </div>
+            <div class="audio-settings audio-settings--speak">
+              <div class="audio-volume"></div>
+            </div>
+          </div>
+          <div class="creative__audio">
+            <button class="btn btn--pause creative__btn"></button>
+            <div class="audio-play">
+              <div class="audio-track audio-track--nospeak"></div>
+              <span class="audio-name">ГИМН ФИЛИАЛОВ</span>
+              <span class="audio-time">00:55</span>
+            </div>
+            <div class="audio-settings audio-settings--nospeak">
+              <div class="audio-volume"></div>
+            </div>
           </div>
           
           <a href="#" download class="creative__link">
@@ -1044,10 +1083,33 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slick-init.js"></script>
+  
+<!-- Slider range for audio -->
+  <script>
+    $(function() {
+      $( ".audio-track" ).slider({
+        orientation: "horizontal",
+        range: "min",
+        animate: true
+      });
+    });
+  </script>
+  <script>
+    $(function() {
+      $( ".audio-volume" ).slider({
+        orientation: "horizontal",
+        range: "min",
+        animate: true
+      });
+    });
+  </script>
   
 <!-- Scroll to anchor -->
   <script>
-    $(document).ready(function(){
+    $(function(){
       $(".menu").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),

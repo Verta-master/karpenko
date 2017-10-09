@@ -4,6 +4,10 @@
 
 .photo__hide {
   display: none;
+  
+  .fancybox-close-small {
+    top: 170px;
+  }
 }
 
 .photo__item {
@@ -51,4 +55,30 @@
 
 .photo__img {
   display: block;
+}
+
+.photo__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo__slider-main {
+  margin-bottom: 50px;
+}
+
+.photo__slider-main img {
+  margin: 0 auto;
+}
+
+.photo__slider-thumbs {
+  display: flex;
+  justify-content: space-around;
+  width: 950px;
+  margin: 0 auto;
+  
+  img {
+    .shadow();
+    width: 165px;
+  }
 }
