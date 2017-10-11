@@ -3340,8 +3340,8 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
   border-radius: 50%;
   background-color: #006aff;
   box-shadow: 0 10px 13px 0 rgba(0, 106, 255, 0.44);
-  outline: none;
   top: -5px;
+  outline: none;
 }
 .mejs__time-handle-content {
   display: none;
@@ -3355,6 +3355,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
   max-width: 530px;
   margin-left: 100px;
   margin-right: 40px;
+  outline: none;
 }
 .mejs__time-total {
   width: 530px;
@@ -3367,8 +3368,9 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
 .mejs__horizontal-volume-total {
   width: 125px;
   height: 3px;
-  top: 30px;
+  top: 35px;
   background-color: transparent;
+  background-image: linear-gradient(to bottom, #fff, #fff 1px, #006aff 2px, #fff 3px);
 }
 .mejs__horizontal-volume-current {
   background-color: #006aff;
@@ -3376,10 +3378,12 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
 }
 .mejs__horizontal-volume-handle {
   display: block;
+  position: absolute;
 }
 .mejs__horizontal-volume-slider {
   padding-top: 30px;
 }
+.mejs__currenttime-container,
 .mejs__time {
   position: absolute;
   top: 20px;
@@ -3387,6 +3391,9 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
   color: #c9c9c9;
   font-size: 15px;
   font-weight: 400;
+}
+.mejs__currenttime-container {
+  right: 250px;
 }
 .mejs__button {
   width: auto;
@@ -3399,6 +3406,25 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
 .audio-name {
   left: 110px;
   top: 40px;
+}
+.mejs__time-buffering {
+  background-color: #fff;
+}
+.mejs__time-float {
+  border: none;
+  width: 50px;
+  height: 38px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  background-color: transparent;
+  background-image: url(../img/bg-time.png);
+  background-repeat: no-repeat;
+  background-position: center top 5px;
+}
+.mejs__time-hovered {
+  display: none;
 }
 @media all and (max-width: 800px){
   .fancybox-infobar{
