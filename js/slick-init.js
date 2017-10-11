@@ -1,43 +1,18 @@
 $().ready(function (e) {
-
-    $('.photo__slider-main').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: false,
-        slide: 'li',
-        cssEase: 'linear',
-        centerMode: false,
-        slidesToShow: 1,
-        variableWidth: true,
-        autoplay: false,
-        autoplaySpeed: 4000,
-        responsive: [{
-            breakpoint: 800,
-            settings: {
-                arrows: false,
-                centerMode: false,
-                centerPadding: '40px',
-                variableWidth: false,
-                slidesToShow: 1,
-                dots: true
-            },
-            breakpoint: 1200,
-            settings: {
-                arrows: false,
-                centerMode: false,
-                centerPadding: '40px',
-                variableWidth: false,
-                slidesToShow: 1,
-                dots: true
-
-            }
-        }],
-        customPaging: function (slider, i) {
-            return '<button class="tab">' + $('.slick-thumbs li:nth-child(' + (i + 1) + ')').html() + '</button>';
-        }
-    });
-
-    //$('.slick-thumbs').html('');
-    //$('.slick-dots').appendTo('.slick-thumbs');
+  $('.photo__slider-main').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.photo__slider-thumbs'
+  });
+  
+  $('.photo__slider-thumbs').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.photo__slider-main',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true
+  });
 });

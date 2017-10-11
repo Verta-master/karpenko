@@ -52,6 +52,7 @@
     </section>
     
     <section class="slider wrapper-list">
+<!--
       <div id="carousel">
         <div class="selected">
           <p class="slider__item">
@@ -82,6 +83,25 @@
           </p>
         </div>
       </div>
+-->
+      
+      <ul class="slider__list">
+        <li class="slider__item">
+          <img src="img/video-1.jpg" alt="" width="360" height="264">
+          <span>Владимир Жириновский<i>Светский политический деятель</i></span>
+          <button type="button" class="btn btn--play slider__play"></button>
+        </li>
+        <li class="slider__item">
+          <img src="img/video-2.jpg" alt="" width="360" height="264">
+          <span>Геннадий Зюганов<i>Светский политический деятель</i></span>
+          <button type="button" class="btn btn--play slider__play"></button>
+        </li>
+        <li class="slider__item">
+          <img src="img/video-3.jpg" alt="" width="360" height="264">
+          <span>Ирина Хакамада<i>Светский политический деятель</i></span>
+          <button type="button" class="btn btn--play slider__play"></button>
+        </li>
+      </ul>
 
       <div class="slider__buttons">
         <button id="prev" class="btn btn--prev btn--disabled"></button>
@@ -856,17 +876,21 @@
               <li><img src="img/photo-2.jpg" alt="Гости СГА" width="750" height="471"></li>
               <li><img src="img/photo-3.jpg" alt="Гости СГА" width="750" height="471"></li>
               <li><img src="img/photo-4.jpg" alt="Гости СГА" width="750" height="471"></li>
+              <li><img src="img/photo-1.jpg" alt="Гости СГА" width="750" height="471"></li>
               <li><img src="img/photo-2.jpg" alt="Гости СГА" width="750" height="471"></li>
+              <li><img src="img/photo-3.jpg" alt="Гости СГА" width="750" height="471"></li>
+              <li><img src="img/photo-4.jpg" alt="Гости СГА" width="750" height="471"></li>
             </ul>
-            <div class="slick-thumbs">
-              <ul class="photo__slider-thumbs">
-                <li><img src="img/photo-1.jpg" alt="Гости СГА" width="750" height="471"></li>
-                <li><img src="img/photo-2.jpg" alt="Гости СГА" width="750" height="471"></li>
-                <li><img src="img/photo-3.jpg" alt="Гости СГА" width="750" height="471"></li>
-                <li><img src="img/photo-4.jpg" alt="Гости СГА" width="750" height="471"></li>
-                <li><img src="img/photo-2.jpg" alt="Гости СГА" width="750" height="471"></li>
-              </ul>
-            </div>
+            <ul class="photo__slider-thumbs">
+              <li><img src="img/photo-1.jpg" alt="Гости СГА" width="750" height="471"></li>
+              <li><img src="img/photo-2.jpg" alt="Гости СГА" width="750" height="471"></li>
+              <li><img src="img/photo-3.jpg" alt="Гости СГА" width="750" height="471"></li>
+              <li><img src="img/photo-4.jpg" alt="Гости СГА" width="750" height="471"></li>
+              <li><img src="img/photo-1.jpg" alt="Гости СГА" width="750" height="471"></li>
+              <li><img src="img/photo-2.jpg" alt="Гости СГА" width="750" height="471"></li>
+              <li><img src="img/photo-3.jpg" alt="Гости СГА" width="750" height="471"></li>
+              <li><img src="img/photo-4.jpg" alt="Гости СГА" width="750" height="471"></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -908,7 +932,7 @@
         </div>
       </article>
       
-      <div class="project__window wrapper" id="project-1">
+      <div data-selectable="true" class="project__window wrapper" id="project-1">
         <h2 class="title-h1">ВИГОРНОСТЬ</h2>
         <img src="img/photo-4.jpg" alt="ВИГОРНОСТЬ" class="project__full" width="750" height="471">
         <p class="project__fulltext">Опираясь на идеи академика В.И.Вернадского о биохимической энергии живого вещества биосферы и описанный Л.Н. Гумилевым феномен пассионарности, профессор М.П. Карпенко продолжил исследования особой человеческой энергии, являющейся основой инновационного развития, разработки и внедрения новых подходов и технологий. Специфика этой активности такова, что люди в той или иной степени не могут следовать только путем слепого подчинения сложившимся стереоти¬пам, но испытывают потребности в достижениях, в непрестанном улучшении, рационализации труда, быта, досуга, в новизне своей деятельности, в творчестве. Это новаторская, преобразовательная энергия, коренящаяся в самом человеке. Растрачиваясь, энергия уходит на создание культуры, строительство городов, на создание идеологий и политическую деятельность, на территориальную экспансию и войны, т.е. на тот труд, результат которого есть сегодняшняя человеческая цивилизация.</p>
@@ -934,6 +958,7 @@
           <label for="creative-2" class="tabs__label creative__02"><span>Поговорки</span></label>
         </nav>
         <article class="creative__tab creative__tab--01">
+          <audio src="img/music-sample.mp3" controls class="mejs__player"></audio>
           <div class="creative__audio">
             <button class="btn btn--pause creative__btn"></button>
             <div class="audio-play">
@@ -1088,6 +1113,7 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/slick-init.js"></script>
+  <script src="js/mediaelement-and-player.min.js"></script>
   
 <!-- Slider range for audio -->
   <script>
