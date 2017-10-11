@@ -786,10 +786,10 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background-color: @blue;
+  background-color: #006aff;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0 23px 43px 0 @blue;
+  box-shadow: 0 23px 43px 0 #006aff;
   background-image: url(../img/btn-play.png);
 }
 
@@ -797,10 +797,10 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background-color: @blue;
+  background-color: #006aff;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0 23px 43px 0 @blue;
+  box-shadow: 0 23px 43px 0 #006aff;
   background-image: url(../img/btn-pause.png);
 }
 
@@ -834,22 +834,94 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
 }
 
 .mejs__time-total {
-  background-color: @blue;
+  background-color: #006aff;
   height: 1px;
 }
 
 .mejs__time-current {
   height: 3px;
-  background-color: @blue;
+  background-color: #006aff;
 }
 
-.mejs__time-handle,
-.mejs__time-handle-content {
+.mejs__horizontal-volume-handle,
+.mejs__time-handle {
   width: 18px;
   height: 18px;
   border: none;
   border-radius: 50%;
-  background-color: @blue;
+  background-color: #006aff;
   box-shadow: 0 10px 13px 0 rgba(0,106,255,0.44);
   outline: none;
+  top: -5px;
 }
+
+.mejs__time-handle-content {
+  display: none;
+}
+
+.mejs__controls {
+  height: 100%;
+  padding-top: 40px;
+}
+
+.mejs__time-rail {
+  padding-top: 30px;
+  max-width: 530px;
+  margin-left: 100px;
+  margin-right: 40px;
+}
+
+.mejs__time-total {
+  width: 530px;
+}
+
+.mejs__volume-button {
+  position: absolute;
+  top: 20px;
+  right: 180px;
+}
+
+.mejs__horizontal-volume-total {
+  width: 125px;
+  height: 3px;
+  top: 30px;
+  background-color: transparent;
+}
+
+.mejs__horizontal-volume-current {
+  background-color: #006aff;
+  height: 3px;
+}
+
+.mejs__horizontal-volume-handle {
+  display: block;
+}
+
+.mejs__horizontal-volume-slider {
+  padding-top: 30px;
+}
+
+.mejs__time {
+  position: absolute;
+  top: 20px;
+  right: 200px;
+  color: #c9c9c9;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.mejs__button {
+  width: auto;
+  height: auto;
+}
+
+.audio-wrap {
+  position: relative;
+  margin-bottom: 75px;
+}
+
+.audio-name {
+  left: 110px;
+  top: 40px;
+}
+
